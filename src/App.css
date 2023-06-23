@@ -1,38 +1,89 @@
-.App {
+body {
+  background-color:rgb(112, 179, 255)
+}
+
+img {
+  width: 100px;
+  cursor: pointer;
+  display: inline;
+}
+
+@font-face {
+  font-family:'Bebas Neue';
+  src: url(./assets/fuentes/bebasneue.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+#titulo {
+  font-size: 80px;
+  color: white; 
+  font-family: Bebas Neue;
   text-align: center;
+  text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family:'Coolvetica';
+  src: url(./assets/fuentes/coolvetica.otf);
+  font-style: normal;
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#quieresjugar {
+  font-size: 20px;
+  font-family: Coolvetica;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#juego {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#opciones {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+#imagen-container {
+  height: 20px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#imagen {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+#opcion {
+  font-size: 30px;
+  color: white; 
+  font-family: Coolvetica;
+}
+
+
+#normativa {
+  text-align: center;
+  background-color:white;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#imagenes {
+  display: flex;
+  flex-direction: row
 }
